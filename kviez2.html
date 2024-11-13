@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="quizcapa.js"></script>
+    <link rel="stylesheet" href="stylequiz2.css">
+    <style>
+        body{
+            background-image: url(https://images.pexels.com/photos/2170473/pexels-photo-2170473.jpeg);
+            background-position: center;
+            background-size: 2000px;
+            image-rendering: optimizeSpeed;
+            z-index: -1;
+            width: 80%;
+            margin: auto;
+            padding-top: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .answer, #wrapper{
+            background-color: rgba(240, 248, 255, 0.795);
+            border: 0;
+            border-radius: 15px;
+            padding: 10px;
+            margin: 10px auto;
+        }
+                        /* Navbar container */
+                        #navbar {
+                background-color: #0073e6; /* Blue color */
+                padding: 1pt 0;
+                width: 100%;
+                text-align: center;
+                border: 0;
+                border-radius:15px;
+        }
+        /* Navbar links */
+        #navbar a {
+                color: white;
+                text-decoration: none;
+                font-size: 1.2rem;
+                margin: 0 15px;
+                font-weight: bold;
+                align-items: center;
+        }
+        /* Link hover effect */
+        #navbar a:hover {
+                text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <nav id="navbar">
+            <br>
+            <a href="landingpage.html" target="_self">HOME</a> <a href="capa.html" target="_self">A FEHÉR CÁPA</a> <a href="plankton.html" target="_self">A FITOPLANKTON</a> <a href="credit.html" target="_self">CREDITS</a> <a href="https://nav.gov.hu/" target="_blank" rel="noopener noreferrer">NAV</a>
+        </nav>
+        <form id="quiz">
+
+            <div class="answer">
+            <p class="question">Mi a fitoplanktonok szerepe a tengeri táplálékláncban?</p>
+            <label><input type="radio" name="kerdes1" value="a">A. A fitoplanktonok nem játszanak szerepet a táplálékláncban, mivel nem képesek fotoszintézisre</label> <br>
+            <label><input type="radio" name="kerdes1" value="b">B. Alapvető táplálékforrást biztosítanak</label> <br>
+            <label><input type="radio" name="kerdes1" value="c">C. fitoplanktonok a tengeri tápláléklánc csúcsán találhatók</label> <br>
+        </div>
+            <div class="answer">
+            <p class="question">Hogyan befolyásolja a fitoplanktonok elterjedését a víz hőmérséklete és tápanyagtartalma?</p>
+            <label><input type="radio" name="kerdes2" value="a">A. A fitoplanktonok elterjedését nem befolyásolja a víz hőmérséklete, mivel minden hőmérsékleten ugyanolyan sebességgel nőnek.</label> <br>
+            <label><input type="radio" name="kerdes2" value="b">B. A tápanyagtartalom nem számít a fitoplanktonok számára, mivel képesek bármilyen környezetben túlélni</label> <br>
+            <label><input type="radio" name="kerdes2" value="c">C. Közvetlenül befolyásolják a növekedésüket</label> <br>
+        </div>
+            <div class="answer">
+            <p class="question">Milyen hatással vannak a fitoplanktonok az éghajlatra?</p>
+            <label><input type="radio" name="kerdes3" value="a">A. A fitoplanktonok nem befolyásolják az éghajlatot, mivel csak a vízi élőlények táplálékául szolgálnak.</label> <br>
+            <label><input type="radio" name="kerdes3" value="b">B. A fitoplanktonok melegítik a Földet, mivel a fotoszintézisük során hőt termelnek</label> <br>
+            <label><input type="radio" name="kerdes3" value="c">C. Csökkentik a szén-dioxid szintjét, mérsékelve a globális felmelegedést</label> <br>
+        </div>
+            <div class="answer">
+            <p class="question">Milyen veszélyek fenyegetik a fitoplanktonokat?</p>
+            <label><input type="checkbox" name="kerdes4" value="a">A. Szennyezés</label> <br>
+            <label><input type="checkbox" name="kerdes4" value="b">B. Túlzott tápanyag-beáramlás</label> <br>
+            <label><input type="checkbox" name="kerdes4" value="c">C. Klímaváltozás</label> <br>
+        </div>
+            <div class="answer">
+            <p class="question">Miért fontosak a fitoplanktonok az óceánok oxigéntermelésében?</p>
+            <label><input type="radio" name="kerdes5" value="a">A. A fitoplanktonok nem termelnek oxigént, mivel nem képesek fotoszintézisre.</label> <br>
+            <label><input type="radio" name="kerdes5" value="b">B. A fitoplanktonok csak a sötét vizekben élnek, ahol nem termelnek oxigént.</label> <br>
+            <label><input type="radio" name="kerdes5" value="c">C. Oxigént termelnek a fotoszintézis során</label> <br>
+            <label><input type="radio" name="kerdes5" value="d">D. A fitoplanktonok oxigént termelnek, de ezt a légkör helyett a vízben tárolják, így nem segítenek az oxigénszint növelésében.</label>
+            <label></label> <br> <br>
+        </div>
+            <button type="button" id="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

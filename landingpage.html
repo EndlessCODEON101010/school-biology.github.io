@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5219/5219092.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-image: url(https://rockcafeszoboszlo.hu/wp-content/uploads/2024/03/Hortobagyi-Husos-palacsinta.jpg);
+        display: flex;
+        flex-direction: column;
+        background-position-x: center;
+        background-size: 150%;
+        }
+
+        /* Wrapper with rounded corners and centered content */
+        #wrapper {
+            background-color: rgba(240, 248, 255, 0.7); /* Light background with transparency */
+            width: 80%; /* Controls width */
+            margin: 20px auto; /* Center horizontally with space at the top */
+            padding: 20px; /* Add padding for spacing within the box */
+            border-radius: 15px; /* Rounded corners */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
+        }
+        #welcometxt{
+            font-weight: 500;
+        }
+        #pics {
+            font-size: 12pt;
+        }
+        #navigation{
+            font-size:15pt;
+        }
+
+        /* Navbar container */
+        #navbar {
+            background-color: #0073e6; /* Blue color */
+            padding: 1pt 0;
+            width: 100%;
+            text-align: center;
+            border: 0;
+            border-radius:15px;
+        }
+        /* Navbar links */
+        #navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin: 0 15px;
+            font-weight: bold;
+            align-items: center;
+
+        }
+        /* Link hover effect */
+        #navbar a:hover {
+            text-decoration: underline;
+        }
+        .block-container {
+        display: flex;
+        gap: 20px; /* Spacing between the blocks */
+        justify-content: center; /* Center the blocks horizontally */
+        padding: 20px;
+        }
+        .block {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 300px; /* Set width of the block */
+            height: 150px; /* Set height of the block */
+            background-color: #0073e6; /* Background color */
+            color: white; /* Text color */
+            text-decoration: none; /* Remove underline */
+            font-size: 1.5em; /* Text size */
+            text-align: center;
+            border-radius: 10px; /* Rounded corners */
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+    /* Hover effect */
+    .block:hover {
+        background-color: #005bb5; /* Darken background on hover */
+        transform: scale(1.05); /* Slightly enlarge on hover */
+    }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <nav id="navbar">
+            <br>
+            <a href="capa.html" target="_self">A FEHÉR CÁPA</a>  <a href="plankton.html" target="_self"> A FITOPLANKTON</a> <a href="credit.html">CREDITS</a>
+        </nav>
+
+        <div id="welcometxt">
+            <p>Üdvözlünk a Hortobágyi palacsinta által készült weboldalon.</p>
+            <p>Ez a weboldal egy iskolai projekt keretében készült!</p>
+            <p>Az oldalon a navigács bárral tudsz navigálni.</p>
+        </div>
+
+        <div class="block-container">
+            <a href="kviez.html" class="block" target="_self">
+                <p>KVÍZ A FEHÉR CÁPÁRÓL</p>
+            </a>
+            <a href="kviez2.html" class="block" target="_self">
+                <p>KVÍZ A FITOPLANKTONRÓL</p>
+            </a>
+        </div>
+        
+    </div>
+
+</body>
+</html>

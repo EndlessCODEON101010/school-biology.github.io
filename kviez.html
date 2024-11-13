@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <script src="quiz1.js" defer></script>
+    <style>
+        body{
+            background-image: url(https://images.pexels.com/photos/2170473/pexels-photo-2170473.jpeg);
+            background-position: center;
+            background-size: 2000px;
+            image-rendering: optimizeSpeed;
+            z-index: -1;
+            width: 80%;
+            margin: auto;
+            padding-top: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .answer, #wrapper{
+            background-color: rgba(240, 248, 255, 0.795);
+            border: 0;
+            border-radius: 15px;
+            padding: 10px;
+            margin: 10px auto;
+        }
+                /* Navbar container */
+                #navbar {
+                background-color: #0073e6; /* Blue color */
+                padding: 1pt 0;
+                width: 100%;
+                text-align: center;
+                border: 0;
+                border-radius:15px;
+        }
+        /* Navbar links */
+        #navbar a {
+                color: white;
+                text-decoration: none;
+                font-size: 1.2rem;
+                margin: 0 15px;
+                font-weight: bold;
+                align-items: center;
+        }
+        /* Link hover effect */
+        #navbar a:hover {
+                text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div id="wrapper">
+
+        <nav id="navbar">
+            <br>
+            <a href="landingpage.html" target="_self">HOME</a> <a href="capa.html" target="_self">A FEHÉR CÁPA</a> <a href="plankton.html" target="_self">A FITOPLANKTON</a> <a href="credit.html" target="_self">CREDITS</a> <a href="https://nav.gov.hu/" target="_blank" rel="noopener noreferrer">NAV</a>
+        </nav>
+
+        <form id="quiz">
+            <div class="answer">
+            <p class="question">Milyen hosszúra nőhet egy nagy fehér cápa?</p>
+            
+            <label><input type="radio" name="question1" value="a"> A. 6 méter hosszúra</label><br>
+            <label><input type="radio" name="question1" value="b"> B. 8 méter hosszúra</label><br>
+            <label><input type="radio" name="question1" value="c"> C. 4 méter hosszúra</label><br>
+            </div>
+
+            <div class="answer">
+            <p class="question">Milyen érzékszervekkel rendelkezik a nagy fehér cápa? (Több válasz lehetséges)</p>
+            
+            <label><input type="checkbox" name="question2" value="Lorenzini-ampullákkal"> Lorenzini-ampullákkal</label><br>
+            <label><input type="checkbox" name="question2" value="Kiváló hallás"> Kiváló hallás</label><br>
+            <label><input type="checkbox" name="question2" value="Rossz hallás"> Rossz hallás</label><br>
+            <label><input type="checkbox" name="question2" value="Kiváló látás"> Kiváló látás</label><br>
+            <label><input type="checkbox" name="question2" value="Kiváló szaglás"> Kiváló szaglás</label><br>
+            </div>
+
+            <div class="answer">
+            <p class="question">Hol található meg leginkább a nagy fehér cápa?</p>
+            
+            <label><input type="checkbox" name="question3" value="Egyesült Államok"> Egyesült Államok</label><br>
+            <label><input type="checkbox" name="question3" value="Dél-Afrika"> Dél-Afrika</label><br>
+            <label><input type="checkbox" name="question3" value="Ausztrália part menti vizeiben"> Ausztrália</label><br>
+            <label><input type="checkbox" name="question3" value="Földközi-tenger part menti vizeiben"> Földközi-tenger part menti vizeiben</label><br>
+            <label><input type="checkbox" name="question3" value="47.39214266029125, 18.981172068972953"> 47.39214266029125, 18.981172068972953</label><br>
+            <label><input type="checkbox" name="question3" value="Európa"> Európa</label><br>
+            <label><input type="checkbox" name="question3" value="Balaton"> Balaton</label><br>
+            </div>
+            <div class="answer">
+            <p class="question">Milyen veszélyekkel néz szembe a nagy fehér cápa?</p>
+            
+            <label><input type="checkbox" name="question4" value="Túlhalászat"> Túlhalászat</label><br>
+            <label><input type="checkbox" name="question4" value="A tengeri élőhelyek rombolása"> A tengeri élőhelyek rombolása</label><br>
+            <label><input type="checkbox" name="question4" value="klímaváltozás"> klímaváltozás</label><br>
+            <label><input type="checkbox" name="question4" value="Velem"> Velem</label><br>
+            <label><input type="checkbox" name="question4" value="atombobm"> atombobm</label><br>
+            </div>
+            <div class="answer">
+            <p class="question">Miért fontos a nagy fehér cápa védelme?</p>
+            
+            <label><input type="radio" name="question5" value="Kulcsfontosságú szerepet játszik a tengeri élelmi lánc egyensúlyában"> Kulcsfontosságú szerepet játszik a tengeri élelmi lánc egyensúlyában</label><br>
+            <label><input type="radio" name="question5" value="Kulcsfontosságú szerepet játszik az emberek táplálkozásában"> Kulcsfontosságú szerepet játszik az emberek táplálkozásában</label><br>
+            </div>
+            <button type="button" id="submit-btn">Submit</button>
+    </form>
+
+    <div id="clear"></div>
+</div>
+    <p id="result"></p>
+</body>
+
+</html>
